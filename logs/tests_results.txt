@@ -1,0 +1,37 @@
+test_color_name_to_hex (__main__.TestExercice) ... ok
+test_compute_mse (__main__.TestExercice) ... FAIL
+test_create_list (__main__.TestExercice) ... FAIL
+test_list_to_dict (__main__.TestExercice) ... ok
+
+======================================================================
+FAIL: test_compute_mse (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 65, in test_compute_mse
+    'Erreur dans le calcul des MSE'
+AssertionError: {} != {'LR': 220.6, 'DNN': 14.0, 'RF': 1681.8}
+- {}
++ {'DNN': 14.0, 'LR': 220.6, 'RF': 1681.8} : Erreur dans le calcul des MSE
+
+======================================================================
+FAIL: test_create_list (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 51, in test_create_list
+    'Mauvaise reponse'
+AssertionError: Lists differ: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13[57245 chars]9999] != [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,[57248 chars]9999]
+
+First differing element 0:
+1
+0
+
+Second list contains 1 additional elements.
+First extra element 9663:
+9999
+
+Diff is 86293 characters long. Set self.maxDiff to None to see it. : Mauvaise reponse
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.056s
+
+FAILED (failures=2)
